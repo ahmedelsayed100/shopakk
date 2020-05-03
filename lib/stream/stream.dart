@@ -22,6 +22,7 @@ class StreamClass extends StatefulWidget {
 class _StreamClassState extends State<StreamClass> {
   TickerController tickerController = TickerController();
   int ticker = 0;
+
   @override
   void dispose() {
     tickerController.dispose();

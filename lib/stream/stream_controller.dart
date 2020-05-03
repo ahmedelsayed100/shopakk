@@ -4,15 +4,19 @@ class TickerController {
   int _ticker;
 
   final StreamController<int> _waterController = StreamController<int>();
+
   Stream<int> get streamWater => _waterController.stream;
+
   StreamSink<int> get sinkWater => _waterController.sink;
 
   final StreamController<int> _firstDurationController =
       StreamController<int>();
+
   StreamSink<int> get streamFirstDuration => _firstDurationController.sink;
 
   final StreamController<int> _secondDurationController =
       StreamController<int>();
+
   StreamSink<int> get streamSecondDuration => _secondDurationController.sink;
 
   TickerController() {
