@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "430758352907",
+    "firebase_url": "https://shopak-febf6.firebaseio.com",
+    "project_id": "shopak-febf6",
+    "storage_bucket": "shopak-febf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430758352907:android:963f80fc8df21478e34f0e",
+        "android_client_info": {
+          "package_name": "com.mokhtarfci550.shopak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430758352907-c8ih4jbt9cpta9v43s3hdqa3chmi3jd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9cYAHO6DRa4JhIomlUoZ9KhjlbHyn13Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430758352907-c8ih4jbt9cpta9v43s3hdqa3chmi3jd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

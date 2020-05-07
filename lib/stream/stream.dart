@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shopak/stream/note/note_controller.dart';
+import 'package:shopak/stream/note/note_model.dart';
 import 'package:shopak/stream/stream_controller.dart';
 
 class StreamTest extends StatelessWidget {
@@ -23,9 +25,16 @@ class _StreamClassState extends State<StreamClass> {
   TickerController tickerController = TickerController();
   int ticker = 0;
 
+  NoteController noteController = NoteController();
+
+  // TextEditingController _textEditingController = TextEditingController();
+  TextEditingController _textEditingController2 = TextEditingController();
+
   @override
   void dispose() {
-    tickerController.dispose();
+    noteController.dispose();
+    // _textEditingController.dispose();
+    _textEditingController2.dispose();
     super.dispose();
   }
 
@@ -36,13 +45,14 @@ class _StreamClassState extends State<StreamClass> {
           title: Text("stream"),
         ),
         body: StreamBuilder(
-          stream: tickerController.streamWater,
-          builder: (BuildContext context, AsyncSnapshot<int> snapshot) {
+          // stream: noteController.streamNotes,
+          builder: (BuildContext context, AsyncSnapshot snapshot) {
             if (snapshot.hasError) {
               return Text("error");
             } else if (!snapshot.hasData) {
               return Text("error");
             }
+            List<Note> notes = snapshot.data;
             return Container(
               // color: Colors.orangeAccent,
               child: Column(
